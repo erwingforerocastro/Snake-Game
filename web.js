@@ -11,14 +11,14 @@ const draw = () => {
     ctx.fillStyle = '#232323'
     ctx.fillRect(0, 0, canvas.width, canvas.height)
     //dibujar la serpiente
-    ctx.fillStyle = 'rgb(0,200.50)'
+    ctx.fillStyle = 'rgb(0,200,50)'
     state.snake.map(p => ctx.fillRect(x(p.x), y(p.y), x(1), y(1)))
     //dibujar las manzanas
-    ctx.fillStyle = 'rgb(255,50.0)'
+    ctx.fillStyle = 'rgb(255,50,0)'
     ctx.fillRect(x(state.apple.x), y(state.apple.y), x(1), y(1))
     //agregar choque
     if (state.snake.length == 0) {
-        ctx.fillStyle = 'rgb(255,0.0)'
+        ctx.fillStyle = 'rgb(255,0,0)'
         ctx.fillRect(0, 0, canvas.width, canvas.height)
     }
 }
